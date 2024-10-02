@@ -1,0 +1,93 @@
+/* Navigation Sectoin */
+#navebar{
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#navebar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+/* Home Section */
+
+#home{
+    height: 154px;
+    padding: 3px 17px;
+}
+
+#home::before{
+    height: 400px;
+}
+
+
+#home p{
+   font-size: 13px;
+}
+
+/* button */
+.btn{
+    font-size: 13px;
+    padding: 4px 7px;
+    margin-bottom: 65px;
+    
+}
+
+
+
+/* Services Section */
+
+#services{
+    flex-direction: column;
+
+}
+
+
+#services .box {
+    border: 2px solid red;
+    /* margin: 17px 0px; */
+    margin-left: 8px;
+    /* padding: 11px; */
+    border-radius: 29px;
+    background-color: rgb(255, 242, 242);
+}
+
+/* Clint Sectoin */
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients img{
+    width: 112px;
+    overflow: hidden;
+    height: auto;
+    padding: 12px;
+}
+.client-section::before {
+    height: 161%;
+}
+.form-g
+
+
+.client-item {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+/* contact us section */
+
+
+#contact-box input{
+    width: 283px;
+}
+
+
+
+/* footer  */
+

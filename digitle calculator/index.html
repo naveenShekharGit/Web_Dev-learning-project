@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitle claculator in javaScript</title>
+</head>
+<body>
+    <table border = "0">
+    <tr>
+        <td colspan="3"><input type="text" id="result"> </td>
+        <td><button onClick="window.location.reload(true)">reload</button> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="res('1')"> </td>
+        <td><input type="button" value="2" onclick="res('2')"> </td>
+        <td><input type="button" value="3" onclick="res('3')"> </td>
+        <td><input type="button" value="/" onclick="res('/')"> </td>
+    </tr>
+
+    <tr> 
+        <td><input type="button" value="4" onclick="res('4')"> </td>
+        <td><input type="button" value="5" onclick="res('5')"> </td>
+        <td><input type="button" value="6" onclick="res('6')"> </td>
+        <td><input type="button" value="-" onclick="res('-')"> </td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="7" onclick="res('7')"> </td>
+        <td><input type="button" value="8" onclick="res('8')"> </td>
+        <td><input type="button" value="9" onclick="res('9')"> </td>
+        <td><input type="button" value="+" onclick="res('+')"> </td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="." onclick="res('.')"> </td>
+        <td><input type="button" value="0" onclick="res('0')"> </td>
+        <td><input type="button" value="=" onclick="solve('=')"> </td>
+        <td><input type="button" value="*" onclick="res('*')"> </td>
+    </tr>
+
+</table>
+<script>
+
+function res(val){
+    document.getElementById('result').value += val;
+}
+
+function solve(){
+    let x = document.getElementById("result").value;
+    let y = eval(x);
+    document.getElementById('result').value = y;
+}
+
+
+
+</script>
+</body>
+</html>

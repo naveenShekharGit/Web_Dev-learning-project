@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my typing website</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .mainDiv{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-color:#3498db;
+        }
+
+        .centerDiv{
+            position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        top: 19%;
+        left: 11%;
+        }
+        #btn{
+            border-radius: 9px;
+    width: 84px;
+    height: 38px;
+    font-size: 16px;
+    background-color: black;
+    color: wheat;
+        }
+
+        #btn:hover{
+           background-color: white;
+           color: black;
+           border: 2px solid black;
+        }
+
+        textarea{
+            background-color: #4444;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px 10px 0px 0px;
+            border: 20px solid #34495e;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="centerDiv">
+             <h1>Welcome to typing speed test</h1>
+             <br>
+             <h2 id="msg"></h2>
+             <textarea name="textarea" id="mywords" cols="100" rows="10" placeholder="Write Text here to check you typing speed"></textarea>
+             <br>
+             <button id="btn" class="button">Start</button>
+        </div>
+    </div>
+
+
+    <script>
+
+        const setOfWords = ["my name is naveen shekhar mishra and i am form bihar",
+        "this is my project and in this porject we will implement a typing speed website",
+         "and in this website we will check our typing speed ",
+          "this website will be very powerfull"
+          ];
+
+
+          const msg = document.getElementById('msg');
+          const typeWords = document.getElementById('mywords');
+          const btn = document.getElementById('btn');
+          let startTime , endTime;
+
+
+        const  playGame = ()=>{
+              let randomNumber = Math.floor(Math.random()*setOfWords.length);
+              console.log(randomNumber);
+              msg.innerText = setOfWords[randomNumber];
+              let date = new Date();
+              startTime = date.getTime();
+              btn.innerText = "Done";
+          }
+
+          const endPlay = () =>{
+            let date = new Date();
+            endTime = date.getTime();
+            let totalTime = ((endTime - startTime) / 1000);
+            console.log(totalTime)
+
+            let totalStr = typeWords.value;
+            let wordCount = wordCounter(totalStr);
+
+            let speed = Math.round((wordCount / totalTime)  *60)
+
+            let finalMsg = "you typed total at " + speed + " word par minutes ";
+
+            finalMsg += comparWords(msg.innerHTML, totalStr);
+
+
+            msg.innerText = finalMsg;
+
+          }
+
+
+          const comparWords = (str1, str2) =>{
+
+            let words1 = str1.split(" ");
+            let words2 = str2.split(" ");
+            let cnt = 0;
+
+
+            // arrayName the foreach then it will take whole function with value and index no. of that array
+            words1.forEach(function (item, index){
+                if (item == words2[index]) {
+                    cnt++;
+                }
+            });
+
+            let errorWords = (words1.length  - cnt); 
+            // return (cnt + "correct out of " + words1.length + " words and the total number of error are "+ errorWords + ".");
+
+
+          }
+
+
+         // Counting the word what word you are writhing 
+          const wordCounter = (str) =>{
+               let response = str.split(" ").length;
+               console.log(response)
+               return response;
+          }
+
+
+         // Start the write and  Done the write using the click event 
+          btn.addEventListener('click', function(){
+              if(this.innerText == 'Start'){
+                     typeWords.disable = false;
+                    playGame();
+              }else if (this.innerText== 'Done') {
+                  typeWords.disable = true;
+                  btn.innerText = "Start";
+                  endPlay();
+              }
+          })
+
+
+
+
+
+    </script>
+</body>
+</html>

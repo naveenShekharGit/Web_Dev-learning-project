@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------------HEADER SECTION---------------- */
+
+.header {
+  position: relative;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #accbda),
+    url(image/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header img {
+  position: relative;
+  top: 43px;
+  left: 38px;
+  width: 6%;
+  border-radius: 67%;
+  height: 12%;
+}
+
+.naveen h2 {
+  position: absolute;
+  top: 128px;
+  left: 15px;
+  color: white;
+}
+.naveen h1 {
+  position: absolute;
+  top: 44%;
+  left: 24%;
+  font-size: 64px;
+  color: white;
+}
+.naveen p {
+  position: absolute;
+  top: 54%;
+  left: 28%;
+  font-size: 21px;
+  color: white;
+}
+
+.btn {
+  position: absolute;
+  left: 38%;
+  top: 61%;
+}
+
+.btn a {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  width: 131px;
+  text-decoration: none;
+  height: 38px;
+  display: inline-block;
+  margin: 21px;
+  border: 2px solid white;
+  font-size: 22px;
+  position: relative;
+  z-index: 1;
+}
+.btn a span {
+  position: relative;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  position: absolute;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn a:hover span {
+  width: 100%;
+}
+.btn a:hover {
+  color: black;
+}
+
+/* #sidenav{
+    height: 100vh;
+    position: fixed;
+    width: 220px;
+    right: -220px;
+    float: right;
+    right: 0px; 
+    width: -220px;
+    top: 0;
+    background-color: #85b4cc;
+
+}
+
+#navbar ul li{
+  list-style: none;
+  margin: 26px;
+  padding: 10px;
+  font-size: 20px;
+
+
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    position: relative;
+    top: 88px;
+    left: 13px;
+    color: white;
+    z-index: 1;
+
+}  */
+
+.menubtn {
+  width: 13%;
+  height: 13%;
+  float: right;
+
+  top: 12px;
+  z-index: -1;
+}
+
+.menubtn img {
+  position: relative;
+  width: 34px;
+  height: 45px;
+  top: -65px;
+  left: 2px;
+}
+
+/* --------------------FEATURE BOX------------------ */
+
+.feature-box {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  /* position: relative; */
+}
+
+.feature-box h1 {
+  color: #45a9dc;
+  font-size: 42px;
+}
+
+.desine-box {
+  position: relative;
+  height: 26px;
+  top: 36px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #117eb5;
+  left: 46%;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 20px;
+}
+.feature-box-heading {
+  display: block;
+  width: 25%;
+  margin: auto;
+  font-size: 49px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.item-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 71px 0;
+}
+
+.left-item {
+  flex-basis: 50%;
+}
+.feature-detail {
+  padding: 35px 0;
+}
+
+.right-item {
+  flex-basis: 50%;
+  margin: auto;
+}
+.right-item img {
+  width: 70%;
+}
+
+.feature-detail h1 {
+  color: #45a9dc;
+  font-size: 31px;
+  display: flex;
+  padding: 18px 0;
+}
+
+.feature-detail p {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* ---------------------------------SEARVICES SECTION-------------------------------- */
+
+.secvices {
+  background-color: rgb(220, 233, 240);
+}
+
+.services-box {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+.services-box-1 {
+  flex-basis: 48%;
+  margin: auto;
+}
+.services-box-1 img {
+  width: 100%;
+  border-radius: 54px;
+  padding: 12px 12px;
+}
+
+/* ---------------------------------RIVEW SECTION--------------------------------------------- */
+
+.user {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  /* flex-direction: row; */
+  padding: 60px;
+}
+
+.user-box {
+  display: flex;
+  border: 2px solid white;
+  flex-direction: row;
+  width: 28%;
+  /* height: 16%; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 3px 4px 4px 3px #45a9dc;
+  flex-basis: 32%;
+  margin: 12px 20px;
+  padding: 12px 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: transform 0.5s;
+}
+
+.user-box h1 {
+  padding: 22px 0;
+  font-size: 26px;
+}
+
+.user-box p {
+  font-size: 17px;
+}
+
+.user-box:hover {
+  transform: translateY(-7px);
+}
+
+/* ---------------------------------FOOTER SECTION----------------------------------- */
+
+.footer {
+  background-color: rgb(220, 233, 240);
+}
+.footer-img img {
+  width: 32%;
+  height: 28%;
+  position: relative;
+  left: 32%;
+  bottom: 206px;
+  opacity: 0.1;
+}
+
+.location-box {
+  display: flex;
+  position: relative;
+  bottom: 200px;
+}
+
+.opening-item {
+  /* flex-basis: 50%; */
+  display: flex;
+  float: left;
+  flex-direction: column;
+  margin: auto;
+}
+
+.get-item {
+  /* flex-basis: 50%; */
+  display: flex;
+  float: right;
+  flex-direction: column;
+  margin: auto;
+}
+
+.opening-item h1 {
+  padding: 19px;
+  font-size: 34px;
+}
+.get-item h1 {
+  padding: 19px;
+  font-size: 34px;
+}
+
+.opening-item p {
+  padding: 8px;
+  font-size: 18px;
+}
+.get-item p {
+  padding: 8px;
+  font-size: 18px;
+}
+
+/* -----------------------------------------RISPONSIVE DESINE CSS--------------------------------------------------- */
+
+@media screen and (max-width: 1150px) {
+  .naveen h1 {
+    position: absolute;
+    top: 46%;
+    left: 33%;
+    font-size: 34px;
+    color: white;
+  }
+  .naveen p {
+    position: absolute;
+    top: 55%;
+    left: 26%;
+    font-size: 15px;
+    color: white;
+  }
+  .header img {
+    position: relative;
+    top: 41px;
+    left: 54px;
+    width: 9%;
+    border-radius: 67%;
+    height: 12%;
+  }
+  .naveen h2 {
+    position: absolute;
+    top: 107px;
+    left: 15px;
+    color: white;
+  }
+  .feature-box h1 {
+    color: #45a9dc;
+    font-size: 34px;
+  }
+  .feature-box-heading {
+    display: block;
+    width: 32%;
+    margin: auto;
+    font-size: 31px;
+    padding: 5px 0;
+    font-weight: bold;
+  }
+  .feature-detail {
+    padding: 13px 4px;
+  }
+  .feature-detail h1 {
+    color: #45a9dc;
+    font-size: 23px;
+    display: flex;
+    padding: 15px 0;
+  }
+  .feature-detail p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .right-item img {
+    width: 80%;
+    margin: auto;
+  }
+  .user-box h1 {
+    padding: 13px 0;
+    font-size: 20px;
+  }
+  .user-box p {
+    font-size: 14px;
+  }
+  .opening-item h1 {
+    padding: 10px;
+    font-size: 28px;
+  }
+  .get-item h1 {
+    padding: 10px;
+    font-size: 28px;
+  }
+  .opening-item p {
+    padding: 8px;
+    font-size: 15px;
+  }
+  .get-item p {
+    padding: 8px;
+    font-size: 15px;
+  }
+  .opening-item {
+    padding: 42px;
+  }
+
+  .get-item {
+    padding: 42px;
+  }
+}
+
+@media screen and (max-width: 700px)  {
+  .naveen h2 {
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    color: white;
+  }
+  .naveen h1 {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    font-size: 22px;
+    color: white;
+  }
+  .naveen p {
+    position: absolute;
+    top: 44%;
+    left: 17%;
+    font-size: 14px;
+    color: white;
+    width: 75%;
+  }
+  .btn {
+    position: absolute;
+    left: 27%;
+    top: 54%;
+  }
+  .btn a {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 104px;
+    text-decoration: none;
+    height: 35px;
+    display: inline-block;
+    margin: 16px;
+    border: 2px solid white;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .feature-box h1 {
+    color: #45a9dc;
+    font-size: 21px;
+  }
+
+  .desine-box {
+    position: relative;
+    height: 18px;
+    top: 22px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #117eb5;
+    left: 40%;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 20px;
+  }
+  .feature-box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    /* position: relative; */
+}
+  .feature-box-heading p {
+    display: block;
+    width: 160%;
+    margin: auto;
+    font-size: 24px;
+    padding: 0px 0;
+    font-weight: bold;
+    right: 30px;
+    position: relative;
+}
+
+
+.item-box {
+    margin: 0;
+    flex-wrap: wrap-reverse;
+}
+.item-box {
+    flex-direction: column;
+    margin: auto;
+}
+
+.services-box {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.user{
+    width: 72%;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+.user-box {
+  width: 100%;
+  margin: auto;
+}
+.location-box {
+    flex-wrap: wrap;
+}
+/* .footer-img img {
+    display: none;
+} */
+.opening-item {
+    margin: auto;
+    position: relative;
+    top: 54px;
+}
+.get-item {
+    margin: auto;
+    position: relative;
+    top: 34px;
+}
+
+}

@@ -1,0 +1,22 @@
+.contact-content{
+    height: 130vh;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.contact-content::after{
+    content: "";
+    background-image: url(../img/hacker.jpg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
+

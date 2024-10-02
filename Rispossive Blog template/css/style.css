@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navigation {
+  font-family: var(--font1);
+  margin-top: 25px;
+  /* height: 74px; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  font-size: 20px;
+}
+
+.nav-left span {
+  font-size: 32px;
+  padding: 10px;
+  color: #4141ce;
+  /* border: 2px solid red; */
+  border-radius: 23px;
+  border-radius: 66px;
+  padding-bottom: 0px;
+  background-color: rgb(230 220 220);
+}
+.nav-left a {
+  text-decoration: none;
+}
+
+.content-left {
+  font-family: var(--font1);
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  z-index: 1;
+}
+
+.content-right img {
+  margin: auto;
+  height: 219px;
+  width: 227px;
+  border: 2px solid black;
+  border-radius: 130px;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 50%; */
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0px 77px;
+  font-size: 22px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0px 10px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 0px 10px;
+}
+.nav-left ul a:hover {
+  color: var(--main-bg-color);
+}
+
+.contact-content{
+  height: 213vh;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 6px;
+  position: relative;
+}
+
+/* .content-left h1{
+    position: absolute;
+    bottom: 388px;
+
+} */
+.content::after {
+  content: "";
+  background-image: url(../img/hacker.jpg);
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.home-articles {
+  background-color: rgb(238 229 229);
+  padding: 18px;
+  margin-top: 23px;
+  position: relative;
+}
+
+.year-box {
+  position: absolute;
+  right: 56px;
+  top: 34px;
+  width: 200px;
+  height: 151px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+  font-size: 18px;
+}
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.home-article img {
+  width: 250px;
+}
+
+/* .home-articles{} */
+
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.footer a {
+  color: white;
+}

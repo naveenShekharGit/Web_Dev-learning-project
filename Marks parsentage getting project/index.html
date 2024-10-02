@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter the first subject marks</label>
+            <input type="text" class="form-control" id="sub1" placeholder="Enter the first subject marks">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter the second subject marks </label>
+            <input type="text" class="form-control" id="sub2" placeholder="Enter the second subject marks">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter the second marks </label>
+            <input type="text" class="form-control" id="sub3" placeholder="enter the third subject marks ">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter the fourth marks </label>
+            <input type="text" class="form-control" id="sub4" placeholder="Enter the forth subject marks ">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter the five subject marks</label>
+            <input type="text" class="form-control" id="sub5" placeholder="Enter the five subject marks">
+          </div>
+
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" value="showPercentage" onclick="calcy()" >Check result</button>
+          </div>
+
+          <div class="aap-form-group showdata">
+               <p id="showData"></p>
+          </div>   
+    </div>
+    <script>
+        console.log("this is the script tag")
+        const calcy = ()=>{
+            let sub1 = document.getElementById('sub1').value;
+            let sub2 = document.getElementById('sub2').value;
+            let sub3 = document.getElementById('sub3').value;
+            let sub4 = document.getElementById('sub4').value;
+            let sub5 = document.getElementById('sub5').value;
+            let grades = "";
+
+            let totalGrades = parseFloat(sub1) +  parseFloat(sub2) +  parseFloat(sub3) +  parseFloat(sub4) +  parseFloat(sub5);
+            alert(totalGrades)
+            let perc = ((totalGrades)/ 500) *100;
+            alert(perc);
+
+            if (perc<= 100 && perc >=80) {
+              grades = 'A';
+            }else if (perc<= 79 && perc >=60){
+              grades = 'B';
+            }else if (perc<= 59 && perc >=40) {
+              grades = 'C';
+            }else{
+              grades = 'F';
+            }
+
+            if (perc>= 39.5) {
+              document.getElementById('showData').innerHTML = ` Out of 500 you total is ${totalGrades} and parcentage is ${perc}%. <br> Your grade is ${grades}. You are Pased `;
+              
+            }else{
+              document.getElementById('showData').innerHTML = ` Out of 500 you total is ${totalGrades} and parcentage is ${perc}%. <br> Your grade is ${grades}.You are Fail `;
+            }
+
+            sub1 = document.getElementById('sub1').value = "";
+            sub2 = document.getElementById('sub2').value = "";
+            sub3 = document.getElementById('sub3').value = "";
+            sub4 = document.getElementById('sub4').value ="";
+            sub5 = document.getElementById('sub5').value= "";
+ 
+        }
+    </script>  
+  </body>
+</html>

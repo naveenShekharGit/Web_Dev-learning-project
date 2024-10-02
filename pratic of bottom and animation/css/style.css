@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container{
+    contain: "";
+    background: linear-gradient(rgba(0,0,0,0.5), rgb(182, 243, 182)),url(../image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+}
+
+.btn {
+position: absolute;
+top: 300px;
+left: 500px;
+}
+
+.btn a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    margin: 20px 5px;
+    padding: 10px 23px;
+    z-index: 1;
+    
+}
+.btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    transition: 0.5s;
+    z-index: -1;
+}
+.btn a:hover span{
+    width: 100%;
+}
+.btn a:hover{
+
+    color: black;
+
+
+}
+
+.section2{
+    background-color:rgb(233, 211, 211) ;
+}
+
+.box{
+    width: 100%;
+    padding: 101px 0px;
+justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box h1 {
+    display: block;
+    margin: 17px;
+    color: #ff2d2d;
+}
+.box-main{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 28%;
+    border: 3px solid red ;
+    margin: 23px 23px;
+    padding: 6px 6px;
+    
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 6px 12px 12px 12px green;
+    transition: transform .5s;
+    
+    
+    
+    
+    
+    
+}
+.box-main:hover{
+    transform: translateY(-7px);
+}
+
+
+.box-main p{
+    top: 9px;
+}

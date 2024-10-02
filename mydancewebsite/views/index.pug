@@ -1,0 +1,69 @@
+//- index.pug
+doctype html
+html
+  head
+    title Harry dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo 
+          img(src="/static/img/logo.jpg")
+          | HDA
+        li #[a(href="/") Home] 
+        li #[a(href="/") About] 
+        li #[a(href="/") Services] 
+        li #[a(href="/") class Info]
+        li #[a(href="/") Contact Us]
+    
+    seciton#introSection 
+        div Welcome to harry dance academy welcome
+        div.small Eat Sleep Dance Repeat 
+
+    seciton#MissionSection
+        h2 Our Mission
+        div.card 
+          h3 Dance Perfection
+            div.card-box 
+              div.card-img 
+                img(src="/static/img/card1.jpg")
+       
+              div.card-content 
+                p This is the best dance academy of the universe
+       
+        div.card 
+          h3 Dance the way you like
+            div.card-box 
+              div.card-img 
+                img(src="/static/img/card2.jpg")
+       
+              div.card-content 
+                p This is the best dance academy of the universe
+        div.card 
+          h3 Expert teaching
+            div.card-box 
+              div.card-img 
+                img(src="/static/img/logo.jpg")
+       
+              div.card-content 
+                p This is the best dance academy of the universe
+
+
+
+    seciton#sponsorSection
+        h2 Our Sponsors
+        div#sponsors 
+          img(src="/static/img/apple.png", alt="error loeading image", class="spimage")
+          img(src="/static/img/google.jpg", alt="error loeading image", class="spimage")
+          img(src="/static/img/bmw1.jpg", alt="error loeading image", class="spimage")
+          img(src="/static/img/bmw2.jpg", alt="error loeading image", class="spimage")
+
+
+    
+    footer#footer
+      | Copyright 20019 naveenDanveAccadmy.com
+        
+    
+    script
+      include ../static/index.js
